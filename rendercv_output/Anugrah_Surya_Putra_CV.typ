@@ -164,9 +164,9 @@ Mobile Engineer with 2+ years of experience building and maintaining cross-platf
 
   ],
   [
-    May 2024 – Aug 2025
+    June 2024 – July 2025
 
-    1 year 4 months
+    1 year 2 months
 
   ],
 )

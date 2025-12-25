@@ -42,11 +42,11 @@ Aug 2025 – present
 
 ## **Mobile Engineer**, PT. Semesta Arus Technology -- South Jakarta, Jakarta
 
-May 2024 – Aug 2025
+June 2024 – July 2025
 
 
 
-1 year 4 months
+1 year 2 months
 
 - Developed cross-platform mobile applications using Flutter and Compose Multiplatform (CMP) for iOS and Android, ensuring consistent user experiences across platforms.
 
