@@ -62,8 +62,6 @@ June 2024 – July 2025
 
 - Contributed to technical documentation to support knowledge transfer and long-term maintenance.
 
-- Co-authored a paper accepted at NeurIPS 2022 (Spotlight presentation, top 5% of submissions).
-
 
 
 # Projects
