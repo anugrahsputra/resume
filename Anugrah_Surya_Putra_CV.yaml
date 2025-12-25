@@ -1,0 +1,295 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.6/schema.json
+cv:
+  name: Anugrah Surya Putra
+  headline: Mobile Engineer
+  location: South Jakarta, Jakarta
+  email: anugrahsputra@email.com
+  photo:
+  phone:
+  website: https://itsyourboiputra.is-a.dev/
+  social_networks:
+    - network: LinkedIn
+      username: anugrahsputra
+    - network: GitHub
+      username: anugrahsputra
+  custom_connections:
+  sections:
+    summary:
+      - Mobile Engineer with 2+ years of experience building and maintaining cross-platform applications using Flutter and Kotlin Multiplatform. Strong focus on clean architecture, production stability, CI/CD workflows, and close collaboration with backend teams to deliver reliable, high-quality mobile experiences.
+
+
+    education:
+      - institution: Universitas Pasundan
+        area: Informatic Engineering
+        degree: BE
+        date:
+        start_date: 2018-09
+        end_date: 2023-06
+        location: Kota Bandung, Jawa Barat
+        summary:
+        highlights:
+
+    experience:
+      - company: BRIK Indonesia
+        position: Mobile Engineer
+        date:
+        start_date: 2025-08
+        end_date: present
+        location: South Jakarta,Jakarta
+        summary:
+        highlights:
+          - "Maintained two Flutter mobile applications: BRIK Hub (internal business operations) and PaintPro Loyalty (customer-facing loyalty program)."
+          - "Collaborated closely with backend engineers to define requirements and deliver incremental features across both applications."
+          - "Diagnosed and resolved production issues, improving app stability, responsiveness, and overall user experience."
+          - "Refactored shared components and business logic to eliminate code duplication, improving maintainability and long-term scalability."
+          - "Owned app release management across app stores, including versioning, deployment, and release coordination."
+          - "Led the integration of Shorebird code push into the CI/CD pipeline, reducing dependency on Play Store releases for hotfixes by ~80% through over-the-air updates."
+          - "Monitored app performance and user behavior using Firebase Analytics, Crashlytics, and Performance Monitoring to proactively improve stability and UX."
+
+      - company: PT. Semesta Arus Technology
+        position: Mobile Engineer
+        date:
+        start_date: 2024-05
+        end_date: 2025-08
+        location: South Jakarta, Jakarta
+        summary:
+        highlights:
+          - "Developed cross-platform mobile applications using Flutter and Compose Multiplatform (CMP) for iOS and Android, ensuring consistent user experiences across platforms."
+          - "Participated in the full development lifecycle from design to deployment, aligned with SDLC best practices."
+          - "Applied clean architecture principles to design scalable and maintainable application structures, improving code quality and development efficiency."
+          - "Collaborated with backend engineers to integrate RESTful APIs and ensure system reliability."
+          - "Diagnosed and resolved critical bugs and performance issues, reducing crash rates and improving application stability."
+          - "Implemented new features and enhancements in existing applications to improve usability and functionality."
+          - "Contributed to technical documentation to support knowledge transfer and long-term maintenance."
+          - "Co-authored a paper accepted at NeurIPS 2022 (Spotlight presentation, top 5% of submissions)."
+
+    projects:
+      - name: "[Change Project Name](https://github.com/anugrahsputra/change_project_name/)"
+        date:
+        start_date: 2025-09
+        end_date: present
+        location:
+        summary: An open-source CLI tool to rename Flutter/Dart projects and automatically update package references and imports.
+
+        highlights:
+          - Developed a CLI utility to automate the refactoring of Flutter/Dart project names, reducing a multi-step manual process into a single command.
+          - Implemented recursive file system traversal to scan project directories while intelligently ignoring build artifacts (.dart_tool, build/) to optimize performance.
+          - Engineered safe refactoring logic that updates pubspec.yaml configurations, refactors package imports across all .dart source files, and modifies internal package configs (package_config.json).
+          - Built robust validation pipelines using RegEx to ensure naming convention compliance and added a "dry-run" mode to preview destructive file changes before execution.
+          - Integrated process management to automatically trigger Flutter toolchains (flutter clean, pub get) via subprocesses upon successful renaming
+      - name: "[Cosmic App KIOSK Touchscreen](https://itsyourboiputra.is-a.dev/projects)"
+        date:
+        start_date: 2024-10
+        end_date: 2025-02
+        location:
+        summary: Information display app for DPR RI written in kotlin and jetpack compose
+        highlights:
+          - Developed a KIOSK touchscreen applicaton for Bureau of Publishing (Biro Penerbitan) DPR RI.
+          - Implemented device power schedule feature to automate power on/off operations
+          - Implemented auto-return mechanism feature that resets WebView to the base URL after a period of user inactivity.
+          - Implemented server side real-time function call using websocket.
+          - Implemented heartbeat mechanism to regularly signal application status to the server
+      - name: "[E-Market Mobile App](https://github.com/anugrahsputra/emarket-buyer/)"
+        date: 
+        start_date: 2022-12
+        end_date: 2023-05
+        location:
+        summary: Mobile E-Commerce app for UMKM in Malingping District
+        highlights:
+          - Conductue system analysis and user requirement gathering to determine the main features of the app.
+          - Designed and developed dual-sided e-marketplace apps (Seller app and Buyer app) using Figma and Flutter.
+          - Utilized Firebase for backend integration and data storage.
+          - Integrated Google Maps API fro user location services.
+          - Perfomed blackbox testing to ensure application features, achieving a 100% test pass rate for the seller app and 95% for the buyer app.
+    skills:
+      - label: Languages
+        details: Dart, Kotlin, Go, Java
+      - label: Mobile Frameworks
+        details: Flutter, Jetpack Compose, Compose Multiplatform
+      - label: Tools
+        details: Android Studio, VS Code, Neovim, Figma
+      - label: Skills
+        details: Problem Solving, Performance Optimization, CI/CD Workflows, Third-Party Integration
+
+design:
+  theme: engineeringresumes
+  page:
+    size: us-letter
+    top_margin: 0.3in
+    bottom_margin: 0.3in
+    left_margin: 0.2in
+    right_margin: 0.2in
+    show_footer: true
+    show_top_note: true
+  colors:
+    body: rgb(0, 0, 0)
+    name: rgb(30, 30, 30)
+    headline: rgb(30, 30, 30)
+    connections: rgb(30, 30, 30)
+    section_titles: rgb(30, 30, 30)
+    links: rgb(30, 30, 30)
+    footer: rgb(128, 128, 128)
+    top_note: rgb(128, 128, 128)
+  typography:
+    line_spacing: 0.6em
+    alignment: justified
+    date_and_location_column_alignment: right
+    font_family:
+      body: georgia
+      name: georgia
+      headline: georgia
+      connections: georgia
+      section_titles: georgia
+    font_size:
+      body: 10pt
+      name: 30pt
+      headline: 10pt
+      connections: 10pt
+      section_titles: 1.4em
+    small_caps:
+      name: false
+      headline: false
+      connections: false
+      section_titles: false
+    bold:
+      name: true
+      headline: false
+      connections: false
+      section_titles: true
+  links:
+    underline: false
+    show_external_link_icon: false
+  header:
+    alignment: center
+    photo_width: 3.5cm
+    photo_position: left
+    photo_space_left: 0.4cm
+    photo_space_right: 0.4cm
+    space_below_name: 0.7cm
+    space_below_headline: 0.7cm
+    space_below_connections: 0.7cm
+    connections:
+      phone_number_format: national
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: false
+      separator: ''
+      space_between_connections: 0.5cm
+  section_titles:
+    type: with_partial_line
+    line_thickness: 0.5pt
+    space_above: 0.5cm
+    space_below: 0.3cm
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 1.2em
+    space_between_text_based_entries: 0.3em
+    show_time_spans_in:
+      - experience
+  entries:
+    date_and_location_width: 4.15cm
+    side_space: 0.2cm
+    space_between_columns: 0.1cm
+    allow_page_break: false
+    short_second_row: true
+    summary:
+      space_above: 0cm
+      space_left: 0cm
+    highlights:
+      bullet: •
+      nested_bullet: •
+      space_left: 0.15cm
+      space_above: 0cm
+      space_between_items: 0cm
+      space_between_bullet_and_text: 0.5em
+  # templates:
+  #   footer: '*NAME -- PAGE_NUMBER/TOTAL_PAGES*'
+  #   top_note: '*LAST_UPDATED CURRENT_DATE*'
+  #   single_date: MONTH_ABBREVIATION YEAR
+  #   date_range: START_DATE – END_DATE
+  #   time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
+  #   one_line_entry:
+  #     main_column: '**LABEL:** DETAILS'
+  #   education_entry:
+  #     main_column: |-
+  #       **INSTITUTION**, AREA
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     degree_column: '**DEGREE**'
+  #     date_and_location_column: |-
+  #       LOCATION
+  #       DATE
+  #   normal_entry:
+  #     main_column: |-
+  #       **NAME**
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     date_and_location_column: |-
+  #       LOCATION
+  #       DATE
+  #   experience_entry:
+  #     main_column: |-
+  #       **COMPANY**, POSITION
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     date_and_location_column: |-
+  #       LOCATION
+  #       DATE
+  #   publication_entry:
+  #     main_column: |-
+  #       **TITLE**
+  #       SUMMARY
+  #       AUTHORS
+  #       URL (JOURNAL)
+  #     date_and_location_column: DATE
+locale:
+  language: english
+  # last_updated: Last updated in
+  # month: month
+  # months: months
+  # year: year
+  # years: years
+  # present: present
+  # month_abbreviations:
+  #   - Jan
+  #   - Feb
+  #   - Mar
+  #   - Apr
+  #   - May
+  #   - June
+  #   - July
+  #   - Aug
+  #   - Sept
+  #   - Oct
+  #   - Nov
+  #   - Dec
+  # month_names:
+  #   - January
+  #   - February
+  #   - March
+  #   - April
+  #   - May
+  #   - June
+  #   - July
+  #   - August
+  #   - September
+  #   - October
+  #   - November
+  #   - December
+settings:
+  current_date: "2025-12-25"
+  render_command:
+    design:
+    locale:
+    typst_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.typ
+    pdf_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.pdf
+    markdown_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.md
+    html_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.html
+    png_path: rendercv_output/NAME_IN_SNAKE_CASE_CV.png
+    dont_generate_markdown: false
+    dont_generate_html: false
+    dont_generate_typst: false
+    dont_generate_pdf: false
+    dont_generate_png: true
+  bold_keywords: []
+
