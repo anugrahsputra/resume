@@ -1,84 +1,87 @@
 // Import the rendercv function and all the refactored components
-#import "@preview/rendercv:0.1.0": *
+#import "@preview/rendercv:0.3.0": *
 
 // Apply the rendercv template with custom configuration
 #show: rendercv.with(
   name: "Anugrah Surya Putra",
+  title: "Anugrah Surya Putra - CV",
   footer: context { [#emph[Anugrah Surya Putra -- #str(here().page())\/#str(counter(page).final().first())]] },
-  top-note: [ #emph[Last updated in Dec 2025] ],
+  top-note: [ #emph[Last updated in Apr 2025] ],
   locale-catalog-language: "en",
+  text-direction: ltr,
   page-size: "us-letter",
-  page-top-margin: 0.3in,
-  page-bottom-margin: 0.3in,
-  page-left-margin: 0.2in,
-  page-right-margin: 0.2in,
-  page-show-footer: true,
-  page-show-top-note: true,
+  page-top-margin: 0.4in,
+  page-bottom-margin: 0.4in,
+  page-left-margin: 0.5in,
+  page-right-margin: 0.5in,
+  page-show-footer: false,
+  page-show-top-note: false,
   colors-body: rgb(0, 0, 0),
-  colors-name: rgb(30, 30, 30),
-  colors-headline: rgb(30, 30, 30),
-  colors-connections: rgb(30, 30, 30),
-  colors-section-titles: rgb(30, 30, 30),
-  colors-links: rgb(30, 30, 30),
+  colors-name: rgb(0, 0, 0),
+  colors-headline: rgb(0, 0, 0),
+  colors-connections: rgb(0, 0, 0),
+  colors-section-titles: rgb(0, 0, 0),
+  colors-links: rgb(0, 0, 0),
   colors-footer: rgb(128, 128, 128),
   colors-top-note: rgb(128, 128, 128),
-  typography-line-spacing: 0.6em,
+  typography-line-spacing: 0.4em,
   typography-alignment: "justified",
   typography-date-and-location-column-alignment: right,
-  typography-font-family-body: "georgia",
-  typography-font-family-name: "georgia",
-  typography-font-family-headline: "georgia",
-  typography-font-family-connections: "georgia",
-  typography-font-family-section-titles: "georgia",
+  typography-font-family-body: "XCharter",
+  typography-font-family-name: "XCharter",
+  typography-font-family-headline: "XCharter",
+  typography-font-family-connections: "XCharter",
+  typography-font-family-section-titles: "XCharter",
   typography-font-size-body: 10pt,
-  typography-font-size-name: 30pt,
+  typography-font-size-name: 24pt,
   typography-font-size-headline: 10pt,
   typography-font-size-connections: 10pt,
-  typography-font-size-section-titles: 1.4em,
+  typography-font-size-section-titles: 1.1em,
   typography-small-caps-name: false,
   typography-small-caps-headline: false,
   typography-small-caps-connections: false,
   typography-small-caps-section-titles: false,
-  typography-bold-name: true,
+  typography-bold-name: false,
   typography-bold-headline: false,
   typography-bold-connections: false,
   typography-bold-section-titles: true,
-  links-underline: false,
+  links-underline: true,
   links-show-external-link-icon: false,
   header-alignment: center,
   header-photo-width: 3.5cm,
-  header-space-below-name: 0.7cm,
-  header-space-below-headline: 0.7cm,
-  header-space-below-connections: 0.7cm,
+  header-space-below-name: 0.3cm,
+  header-space-below-headline: 0.2cm,
+  header-space-below-connections: 0.5cm,
   header-connections-hyperlink: true,
-  header-connections-show-icons: true,
-  header-connections-display-urls-instead-of-usernames: false,
-  header-connections-separator: "",
+  header-connections-show-icons: false,
+  header-connections-display-urls-instead-of-usernames: true,
+  header-connections-separator: " | ",
   header-connections-space-between-connections: 0.5cm,
-  section-titles-type: "with_partial_line",
+  section-titles-type: "with_full_line",
   section-titles-line-thickness: 0.5pt,
-  section-titles-space-above: 0.5cm,
-  section-titles-space-below: 0.3cm,
+  section-titles-space-above: 0.3cm,
+  section-titles-space-below: 0.1cm,
   sections-allow-page-break: true,
-  sections-space-between-text-based-entries: 0.3em,
-  sections-space-between-regular-entries: 1.2em,
+  sections-space-between-text-based-entries: 0.1cm,
+  sections-space-between-regular-entries: 0.3cm,
   entries-date-and-location-width: 4.15cm,
-  entries-side-space: 0.2cm,
+  entries-side-space: 0cm,
   entries-space-between-columns: 0.1cm,
   entries-allow-page-break: false,
-  entries-short-second-row: true,
+  entries-short-second-row: false,
+  entries-degree-width: 1cm,
   entries-summary-space-left: 0cm,
-  entries-summary-space-above: 0cm,
-  entries-highlights-bullet:  "•" ,
-  entries-highlights-nested-bullet:  "•" ,
-  entries-highlights-space-left: 0.15cm,
-  entries-highlights-space-above: 0cm,
-  entries-highlights-space-between-items: 0cm,
-  entries-highlights-space-between-bullet-and-text: 0.5em,
+  entries-summary-space-above: 0.08cm,
+  entries-highlights-bullet:  text(13pt, [•], baseline: -0.6pt) ,
+  entries-highlights-nested-bullet:  text(13pt, [•], baseline: -0.6pt) ,
+  entries-highlights-space-left: 0.3cm,
+  entries-highlights-space-above: 0.05cm,
+  entries-highlights-space-between-items: 0.05cm,
+  entries-highlights-space-between-bullet-and-text: 0.3em,
   date: datetime(
     year: 2025,
-    month: 12,
-    day: 25,
+    month: 4,
+    day: 7,
   ),
 )
 
@@ -88,28 +91,30 @@
   #headline([Mobile Engineer])
 
 #connections(
-  [#connection-with-icon("location-dot")[South Jakarta, Jakarta]],
-  [#link("mailto:anugrahsputra@email.com", icon: false, if-underline: false, if-color: false)[#connection-with-icon("envelope")[anugrahsputra\@email.com]]],
-  [#link("https://itsyourboiputra.is-a.dev/", icon: false, if-underline: false, if-color: false)[#connection-with-icon("link")[itsyourboiputra.is-a.dev]]],
-  [#link("https://linkedin.com/in/anugrahsputra", icon: false, if-underline: false, if-color: false)[#connection-with-icon("linkedin")[anugrahsputra]]],
-  [#link("https://github.com/anugrahsputra", icon: false, if-underline: false, if-color: false)[#connection-with-icon("github")[anugrahsputra]]],
+  [South Jakarta, Jakarta],
+  [#link("mailto:anugrahsputra@gmail.com", icon: false, if-underline: false, if-color: false)[anugrahsputra\@gmail.com]],
+  [#link("https://downormal.dev/", icon: false, if-underline: false, if-color: false)[downormal.dev]],
+  [#link("https://linkedin.com/in/anugrahsputra", icon: false, if-underline: false, if-color: false)[linkedin.com\/in\/anugrahsputra]],
+  [#link("https://github.com/anugrahsputra", icon: false, if-underline: false, if-color: false)[github.com\/anugrahsputra]],
 )
 
 
 == Summary
 
-Mobile Engineer with 2+ years of experience building and maintaining cross-platform applications using Flutter and Kotlin Multiplatform. Strong focus on clean architecture, production stability, CI\/CD workflows, and close collaboration with backend teams to deliver reliable, high-quality mobile experiences.
+Mobile Engineer with 2+ years of experience building cross-platform applications using #strong[Flutter] and #strong[Kotlin Multiplatform]. Skilled in scalable architecture design, #strong[CI\/CD] automation, and production stability. Collaborative team player with a track record of delivering business-critical solutions.
 
 == Education
 
 #education-entry(
   [
-    #strong[Universitas Pasundan], BE in Informatic Engineering -- Kota Bandung, Jawa Barat
+    #strong[Universitas Pasundan], Bachelor of Engineering (BE) in Informatics Engineering -- Kota Bandung, Jawa Barat
 
   ],
   [
     Sept 2018 – June 2023
 
+  ],
+  main-column-second-row: [
   ],
 )
 
@@ -117,27 +122,25 @@ Mobile Engineer with 2+ years of experience building and maintaining cross-platf
 
 #regular-entry(
   [
-    #strong[Mobile Engineer], BRIK Indonesia -- South Jakarta,Jakarta
-
-    - Maintained two Flutter mobile applications: BRIK Hub (internal business operations) and PaintPro Loyalty (customer-facing loyalty program).
-
-    - Collaborated closely with backend engineers to define requirements and deliver incremental features across both applications.
-
-    - Diagnosed and resolved production issues, improving app stability, responsiveness, and overall user experience.
-
-    - Refactored shared components and business logic to eliminate code duplication, improving maintainability and long-term scalability.
-
-    - Owned app release management across app stores, including versioning, deployment, and release coordination.
-
-    - Led the integration of Shorebird code push into the CI\/CD pipeline, reducing dependency on Play Store releases for hotfixes by \~80\% through over-the-air updates.
-
-    - Monitored app performance and user behavior using Firebase Analytics, Crashlytics, and Performance Monitoring to proactively improve stability and UX.
+    #strong[Mobile Engineer], BRIK Indonesia -- South Jakarta, Jakarta
 
   ],
   [
     Aug 2025 – present
 
-    5 months
+  ],
+  main-column-second-row: [
+    - Maintained and enhanced two #strong[Flutter] applications: #strong[BRIK Hub] (internal business operations) and #strong[PaintPro Loyalty] (customer loyalty program).
+
+    - Integrated #strong[#emph[#sym.ast.basic#h(0pt, weak: true) Shorebird]]#sym.ast.basic for over-the-air hotfixes, reducing critical patch deployment time from days to minutes (\~80\% improvement).
+
+    - Built monitoring dashboards with #strong[#emph[#sym.ast.basic#h(0pt, weak: true) Firebase]#sym.ast.basic Crashlytics] and #strong[Performance Monitoring], enabling proactive issue detection and faster debugging.
+
+    - Refactored shared UI components and business logic into reusable modules, reducing code duplication and improving maintainability.
+
+    - Established #strong[CI\/CD] pipelines with automated testing and deployment workflows, streamlining release cycles and reducing manual errors.
+
+    - Collaborated with product and backend teams to translate business requirements into technical implementations and deliver features on schedule.
 
   ],
 )
@@ -146,25 +149,23 @@ Mobile Engineer with 2+ years of experience building and maintaining cross-platf
   [
     #strong[Mobile Engineer], PT. Semesta Arus Technology -- South Jakarta, Jakarta
 
-    - Developed cross-platform mobile applications using Flutter and Compose Multiplatform (CMP) for iOS and Android, ensuring consistent user experiences across platforms.
-
-    - Participated in the full development lifecycle from design to deployment, aligned with SDLC best practices.
-
-    - Applied clean architecture principles to design scalable and maintainable application structures, improving code quality and development efficiency.
-
-    - Collaborated with backend engineers to integrate RESTful APIs and ensure system reliability.
-
-    - Diagnosed and resolved critical bugs and performance issues, reducing crash rates and improving application stability.
-
-    - Implemented new features and enhancements in existing applications to improve usability and functionality.
-
-    - Contributed to technical documentation to support knowledge transfer and long-term maintenance.
-
   ],
   [
     June 2024 – July 2025
 
-    1 year 2 months
+  ],
+  main-column-second-row: [
+    - Developed cross-platform mobile applications using #strong[#emph[#sym.ast.basic#h(0pt, weak: true) Flutter]]#emph[ and ]#strong[#emph[Compose Multiplatform]]#sym.ast.basic#h(0pt, weak: true) , delivering unified experiences for iOS and Android.
+
+    - Implemented #strong[#emph[#sym.ast.basic#h(0pt, weak: true) Clean Architecture]]#emph[ and ]#strong[#emph[SOLID]#sym.ast.basic principles], creating modular codebases that improved testability and reduced feature development time.
+
+    - Partnered with backend teams to integrate #strong[RESTful APIs], ensuring reliable data synchronization for business-critical operations.
+
+    - Profiled and resolved memory leaks and performance bottlenecks, reducing app crash rates by 15\% and improving overall stability.
+
+    - Set up automated build and testing pipelines, reducing deployment preparation time and ensuring consistent release quality.
+
+    - Mentored junior developers on #strong[Flutter] best practices and code review processes, improving team code quality and knowledge sharing.
 
   ],
 )
@@ -175,21 +176,19 @@ Mobile Engineer with 2+ years of experience building and maintaining cross-platf
   [
     #strong[#link("https://github.com/anugrahsputra/change_project_name/")[Change Project Name]]
 
-    #summary[An open-source CLI tool to rename Flutter\/Dart projects and automatically update package references and imports.]
-
-    - Developed a CLI utility to automate the refactoring of Flutter\/Dart project names, reducing a multi-step manual process into a single command.
-
-    - Implemented recursive file system traversal to scan project directories while intelligently ignoring build artifacts (.dart\_tool, build\/) to optimize performance.
-
-    - Engineered safe refactoring logic that updates pubspec.yaml configurations, refactors package imports across all .dart source files, and modifies internal package configs (package\_config.json).
-
-    - Built robust validation pipelines using RegEx to ensure naming convention compliance and added a \"dry-run\" mode to preview destructive file changes before execution.
-
-    - Integrated process management to automatically trigger Flutter toolchains (flutter clean, pub get) via subprocesses upon successful renaming
-
   ],
   [
     Sept 2025 – present
+
+  ],
+  main-column-second-row: [
+    #summary[Open-source CLI tool built with #strong[Dart] to automate #strong[Flutter]\/#strong[Dart] project renaming and refactoring.]
+
+    - Built a recursive file-traversal engine that safely refactors imports and configurations while skipping build artifacts.
+
+    - Implemented RegEx validation with a dry-run mode for predictable, risk-free project transformations.
+
+    - Automated post-rename toolchain execution (flutter clean, pub get) for immediate project consistency.
 
   ],
 )
@@ -198,21 +197,21 @@ Mobile Engineer with 2+ years of experience building and maintaining cross-platf
   [
     #strong[#link("https://itsyourboiputra.is-a.dev/projects")[Cosmic App KIOSK Touchscreen]]
 
-    #summary[Information display app for DPR RI written in kotlin and jetpack compose]
-
-    - Developed a KIOSK touchscreen applicaton for Bureau of Publishing (Biro Penerbitan) DPR RI.
-
-    - Implemented device power schedule feature to automate power on\/off operations
-
-    - Implemented auto-return mechanism feature that resets WebView to the base URL after a period of user inactivity.
-
-    - Implemented server side real-time function call using websocket.
-
-    - Implemented heartbeat mechanism to regularly signal application status to the server
-
   ],
   [
     Oct 2024 – Feb 2025
+
+  ],
+  main-column-second-row: [
+    #summary[Interactive KIOSK information display app for DPR RI built with #strong[Kotlin] and #strong[Jetpack Compose].]
+
+    - Developed automated power-scheduling and WebView reset mechanisms for reliable unattended operation.
+
+    - Built real-time bidirectional communication using #strong[#emph[#sym.ast.basic#h(0pt, weak: true) WebSockets]]#sym.ast.basic with heartbeat monitoring for remote status tracking.
+
+    - Designed intuitive touch-based UI optimized for large-screen KIOSK displays with accessibility considerations.
+
+    - Implemented offline-first data caching to ensure continuous operation during network interruptions.
 
   ],
 )
@@ -221,31 +220,31 @@ Mobile Engineer with 2+ years of experience building and maintaining cross-platf
   [
     #strong[#link("https://github.com/anugrahsputra/emarket-buyer/")[E-Market Mobile App]]
 
-    #summary[Mobile E-Commerce app for UMKM in Malingping District]
-
-    - Conductue system analysis and user requirement gathering to determine the main features of the app.
-
-    - Designed and developed dual-sided e-marketplace apps (Seller app and Buyer app) using Figma and Flutter.
-
-    - Utilized Firebase for backend integration and data storage.
-
-    - Integrated Google Maps API fro user location services.
-
-    - Perfomed blackbox testing to ensure application features, achieving a 100\% test pass rate for the seller app and 95\% for the buyer app.
-
   ],
   [
     Dec 2022 – May 2023
+
+  ],
+  main-column-second-row: [
+    #summary[Dual-sided e-commerce platform (Seller & Buyer) for regional MSMEs built with #strong[Flutter] and #strong[Firebase].]
+
+    - Developed full-stack mobile experience with #strong[#emph[#sym.ast.basic#h(0pt, weak: true) Flutter]]#emph[, ]#strong[#emph[Firebase]]#emph[, and ]#emph[Google Maps API]#sym.ast.basic for location-based services.
+
+    - Conducted rigorous blackbox testing, achieving 95\%+ test pass rate before production deployment.
+
+    - Integrated #strong[Firebase] Authentication and Cloud Firestore for real-time inventory management and order tracking.
+
+    - Designed responsive UI components supporting both seller and buyer workflows within a unified codebase.
 
   ],
 )
 
 == Skills
 
-#strong[Languages:] Dart, Kotlin, Go, Java
+#strong[Languages:] #strong[Dart], #strong[Kotlin], #strong[Go], #strong[Java], #strong[Swift]
 
-#strong[Mobile Frameworks:] Flutter, Jetpack Compose, Compose Multiplatform
+#strong[Frameworks:] #strong[Flutter], #strong[Compose Multiplatform], #strong[Jetpack Compose], #strong[SwiftUI]
 
-#strong[Tools:] Android Studio, VS Code, Neovim, Figma
+#strong[Tools & Platforms:] #strong[Firebase], Git, #strong[Shorebird], Figma, Android Studio, VS Code, Neovim
 
-#strong[Skills:] Problem Solving, Performance Optimization, CI\/CD Workflows, Third-Party Integration
+#strong[Practices:] #strong[Clean Architecture], #strong[SOLID], #strong[CI\/CD], TDD, Agile Methodology

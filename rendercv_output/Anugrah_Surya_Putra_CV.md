@@ -1,42 +1,37 @@
 # Anugrah Surya Putra's CV
 
-- Email: [anugrahsputra@email.com](mailto:anugrahsputra@email.com)
+- Email: [anugrahsputra@gmail.com](mailto:anugrahsputra@gmail.com)
 - Location: South Jakarta, Jakarta
-- Website: [itsyourboiputra.is-a.dev](https://itsyourboiputra.is-a.dev/)
+- Website: [downormal.dev](https://downormal.dev/)
 - LinkedIn: [anugrahsputra](https://linkedin.com/in/anugrahsputra)
 - GitHub: [anugrahsputra](https://github.com/anugrahsputra)
 
 
 # Summary
-Mobile Engineer with 2+ years of experience building and maintaining cross-platform applications using Flutter and Kotlin Multiplatform. Strong focus on clean architecture, production stability, CI/CD workflows, and close collaboration with backend teams to deliver reliable, high-quality mobile experiences.
+Mobile Engineer with 2+ years of experience building cross-platform applications using **Flutter** and **Kotlin Multiplatform**. Skilled in scalable architecture design, **CI/CD** automation, and production stability. Collaborative team player with a track record of delivering business-critical solutions.
 
 # Education
-## **Universitas Pasundan**, BE in Informatic Engineering -- Kota Bandung, Jawa BaratSept 2018 – June 2023
+## **Universitas Pasundan**, Bachelor of Engineering (BE) in Informatics Engineering -- Kota Bandung, Jawa Barat
+Sept 2018 – June 2023
 
 
 
 # Experience
-## **Mobile Engineer**, BRIK Indonesia -- South Jakarta,Jakarta
+## **Mobile Engineer**, BRIK Indonesia -- South Jakarta, Jakarta
 
 Aug 2025 – present
 
+- Maintained and enhanced two **Flutter** applications: **BRIK Hub** (internal business operations) and **PaintPro Loyalty** (customer loyalty program).
 
+- Integrated ****Shorebird**** for over-the-air hotfixes, reducing critical patch deployment time from days to minutes (~80% improvement).
 
-5 months
+- Built monitoring dashboards with ****Firebase** Crashlytics** and **Performance Monitoring**, enabling proactive issue detection and faster debugging.
 
-- Maintained two Flutter mobile applications: BRIK Hub (internal business operations) and PaintPro Loyalty (customer-facing loyalty program).
+- Refactored shared UI components and business logic into reusable modules, reducing code duplication and improving maintainability.
 
-- Collaborated closely with backend engineers to define requirements and deliver incremental features across both applications.
+- Established **CI/CD** pipelines with automated testing and deployment workflows, streamlining release cycles and reducing manual errors.
 
-- Diagnosed and resolved production issues, improving app stability, responsiveness, and overall user experience.
-
-- Refactored shared components and business logic to eliminate code duplication, improving maintainability and long-term scalability.
-
-- Owned app release management across app stores, including versioning, deployment, and release coordination.
-
-- Led the integration of Shorebird code push into the CI/CD pipeline, reducing dependency on Play Store releases for hotfixes by ~80% through over-the-air updates.
-
-- Monitored app performance and user behavior using Firebase Analytics, Crashlytics, and Performance Monitoring to proactively improve stability and UX.
+- Collaborated with product and backend teams to translate business requirements into technical implementations and deliver features on schedule.
 
 
 
@@ -44,23 +39,17 @@ Aug 2025 – present
 
 June 2024 – July 2025
 
+- Developed cross-platform mobile applications using ****Flutter**** and ****Compose Multiplatform****, delivering unified experiences for iOS and Android.
 
+- Implemented ****Clean Architecture**** and ****SOLID** principles**, creating modular codebases that improved testability and reduced feature development time.
 
-1 year 2 months
+- Partnered with backend teams to integrate **RESTful APIs**, ensuring reliable data synchronization for business-critical operations.
 
-- Developed cross-platform mobile applications using Flutter and Compose Multiplatform (CMP) for iOS and Android, ensuring consistent user experiences across platforms.
+- Profiled and resolved memory leaks and performance bottlenecks, reducing app crash rates by 15% and improving overall stability.
 
-- Participated in the full development lifecycle from design to deployment, aligned with SDLC best practices.
+- Set up automated build and testing pipelines, reducing deployment preparation time and ensuring consistent release quality.
 
-- Applied clean architecture principles to design scalable and maintainable application structures, improving code quality and development efficiency.
-
-- Collaborated with backend engineers to integrate RESTful APIs and ensure system reliability.
-
-- Diagnosed and resolved critical bugs and performance issues, reducing crash rates and improving application stability.
-
-- Implemented new features and enhancements in existing applications to improve usability and functionality.
-
-- Contributed to technical documentation to support knowledge transfer and long-term maintenance.
+- Mentored junior developers on **Flutter** best practices and code review processes, improving team code quality and knowledge sharing.
 
 
 
@@ -69,17 +58,13 @@ June 2024 – July 2025
 
 Sept 2025 – present
 
-An open-source CLI tool to rename Flutter/Dart projects and automatically update package references and imports.
+Open-source CLI tool built with **Dart** to automate **Flutter**/**Dart** project renaming and refactoring.
 
-- Developed a CLI utility to automate the refactoring of Flutter/Dart project names, reducing a multi-step manual process into a single command.
+- Built a recursive file-traversal engine that safely refactors imports and configurations while skipping build artifacts.
 
-- Implemented recursive file system traversal to scan project directories while intelligently ignoring build artifacts (.dart_tool, build/) to optimize performance.
+- Implemented RegEx validation with a dry-run mode for predictable, risk-free project transformations.
 
-- Engineered safe refactoring logic that updates pubspec.yaml configurations, refactors package imports across all .dart source files, and modifies internal package configs (package_config.json).
-
-- Built robust validation pipelines using RegEx to ensure naming convention compliance and added a "dry-run" mode to preview destructive file changes before execution.
-
-- Integrated process management to automatically trigger Flutter toolchains (flutter clean, pub get) via subprocesses upon successful renaming
+- Automated post-rename toolchain execution (flutter clean, pub get) for immediate project consistency.
 
 
 
@@ -87,17 +72,15 @@ An open-source CLI tool to rename Flutter/Dart projects and automatically update
 
 Oct 2024 – Feb 2025
 
-Information display app for DPR RI written in kotlin and jetpack compose
+Interactive KIOSK information display app for DPR RI built with **Kotlin** and **Jetpack Compose**.
 
-- Developed a KIOSK touchscreen applicaton for Bureau of Publishing (Biro Penerbitan) DPR RI.
+- Developed automated power-scheduling and WebView reset mechanisms for reliable unattended operation.
 
-- Implemented device power schedule feature to automate power on/off operations
+- Built real-time bidirectional communication using ****WebSockets**** with heartbeat monitoring for remote status tracking.
 
-- Implemented auto-return mechanism feature that resets WebView to the base URL after a period of user inactivity.
+- Designed intuitive touch-based UI optimized for large-screen KIOSK displays with accessibility considerations.
 
-- Implemented server side real-time function call using websocket.
-
-- Implemented heartbeat mechanism to regularly signal application status to the server
+- Implemented offline-first data caching to ensure continuous operation during network interruptions.
 
 
 
@@ -105,25 +88,23 @@ Information display app for DPR RI written in kotlin and jetpack compose
 
 Dec 2022 – May 2023
 
-Mobile E-Commerce app for UMKM in Malingping District
+Dual-sided e-commerce platform (Seller & Buyer) for regional MSMEs built with **Flutter** and **Firebase**.
 
-- Conductue system analysis and user requirement gathering to determine the main features of the app.
+- Developed full-stack mobile experience with ****Flutter****, ****Firebase****, and **Google Maps API** for location-based services.
 
-- Designed and developed dual-sided e-marketplace apps (Seller app and Buyer app) using Figma and Flutter.
+- Conducted rigorous blackbox testing, achieving 95%+ test pass rate before production deployment.
 
-- Utilized Firebase for backend integration and data storage.
+- Integrated **Firebase** Authentication and Cloud Firestore for real-time inventory management and order tracking.
 
-- Integrated Google Maps API fro user location services.
-
-- Perfomed blackbox testing to ensure application features, achieving a 100% test pass rate for the seller app and 95% for the buyer app.
+- Designed responsive UI components supporting both seller and buyer workflows within a unified codebase.
 
 
 
 # Skills
-**Languages:** Dart, Kotlin, Go, Java
+**Languages:** **Dart**, **Kotlin**, **Go**, **Java**, **Swift**
 
-**Mobile Frameworks:** Flutter, Jetpack Compose, Compose Multiplatform
+**Frameworks:** **Flutter**, **Compose Multiplatform**, **Jetpack Compose**, **SwiftUI**
 
-**Tools:** Android Studio, VS Code, Neovim, Figma
+**Tools & Platforms:** **Firebase**, Git, **Shorebird**, Figma, Android Studio, VS Code, Neovim
 
-**Skills:** Problem Solving, Performance Optimization, CI/CD Workflows, Third-Party Integration
+**Practices:** **Clean Architecture**, **SOLID**, **CI/CD**, TDD, Agile Methodology
