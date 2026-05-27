@@ -122,7 +122,7 @@ Mobile Engineer with 2+ years of experience building cross-platform applications
 
 #regular-entry(
   [
-    #strong[Mobile Engineer], BRIK Indonesia -- South Jakarta, Jakarta
+    #strong[Mobile Engineer], PT Bangun Rancang Indonesia Kita (BRIK) -- South Jakarta, Jakarta
 
   ],
   [
@@ -130,17 +130,17 @@ Mobile Engineer with 2+ years of experience building cross-platform applications
 
   ],
   main-column-second-row: [
-    - Maintained and enhanced two #strong[Flutter] applications: #strong[BRIK Hub] (internal business operations) and #strong[PaintPro Loyalty] (customer loyalty program).
+    - Built a local-first sync engine that automatically saves and uploads data in the background, eliminating the need for drivers to manually refresh the app.
 
-    - Integrated #strong[#emph[#sym.ast.basic#h(0pt, weak: true) Shorebird]]#sym.ast.basic for over-the-air hotfixes, reducing critical patch deployment time from days to minutes (\~80\% improvement).
+    - Designed an offline caching system for driver checklists that prevents progress loss and step-skipping in areas with no internet connection.
 
-    - Built monitoring dashboards with #strong[#emph[#sym.ast.basic#h(0pt, weak: true) Firebase]#sym.ast.basic Crashlytics] and #strong[Performance Monitoring], enabling proactive issue detection and faster debugging.
+    - Improved camera speed and app stability by offloading photo and video processing to background tasks using #strong[#emph[#sym.ast.basic#h(0pt, weak: true) FFmpeg]]#sym.ast.basic#h(0pt, weak: true) .
 
-    - Refactored shared UI components and business logic into reusable modules, reducing code duplication and improving maintainability.
+    - Created a flexible notification routing system using the #strong[#emph[#sym.ast.basic#h(0pt, weak: true) Strategy Pattern]]#sym.ast.basic to direct users to specific pages based on their role and context.
 
-    - Established #strong[CI\/CD] pipelines with automated testing and deployment workflows, streamlining release cycles and reducing manual errors.
+    - Developed a unified check-in flow for field visits that dynamically adjusts steps depending on whether the user is online or offline.
 
-    - Collaborated with product and backend teams to translate business requirements into technical implementations and deliver features on schedule.
+    - Automated testing and over-the-air (OTA) hotfixes using #strong[#emph[#sym.ast.basic#h(0pt, weak: true) Bitbucket Pipelines]]#emph[ and ]#strong[#emph[Shorebird]]#sym.ast.basic#h(0pt, weak: true) , reducing hotfix delivery time from days to minutes.
 
   ],
 )
@@ -171,6 +171,56 @@ Mobile Engineer with 2+ years of experience building cross-platform applications
 )
 
 == Projects
+
+#regular-entry(
+  [
+    #strong[#link("https://github.com/anugrahsputra/go-quran-api")[Quran API]]
+
+  ],
+  [
+    Oct 2025 – Mar 2026
+
+  ],
+  main-column-second-row: [
+    #summary[#strong[Go]-based REST API for retrieving Quranic texts, Tafsir (exegesis), and prayer times, featuring full-text search capabilities using #strong[Bleve] and #strong[Redis] caching.]
+
+    - Architected a #strong[Clean Architecture] backend in #strong[Go] using the #strong[Gin] framework, decoupling handlers, business services, and repository layers to ensure modularity.
+
+    - Engineered a high-performance full-text search engine using #strong[Bleve], configuring a custom N-gram text analyzer and Unicode tokenizer to enable fuzzy matches on transliterated queries.
+
+    - Optimized API response latency by integrating #strong[Redis] as a cache layer with a 24-hour TTL for external upstream APIs, reducing downstream request overhead.
+
+    - Developed a custom IP-based fixed-window rate limiter middleware with #strong[Redis], utilizing a fail-open design to maintain API availability during database or cache disruptions.
+
+    - Streamlined container deployments by building a multi-stage #strong[Docker] pipeline that pre-builds and bundles search indexes to eliminate cold-start initialization latency.
+
+  ],
+)
+
+#regular-entry(
+  [
+    #strong[#link("https://github.com/anugrahsputra/portfolio-backend/")[Portfolio Backend]]
+
+  ],
+  [
+    Mar 2026 – present
+
+  ],
+  main-column-second-row: [
+    #summary[#strong[Go]-based REST API backend for a personal portfolio system using #strong[Clean Architecture], #strong[Gin], #strong[PostgreSQL], and #strong[SQLC].]
+
+    - Architected a modular system using Clean (Hexagonal) Architecture to decouple business logic, database operations, and the HTTP presentation layer.
+
+    - Designed a high-performance LATERAL JOIN query using #strong[PostgreSQL] JSON aggregation (jsonb\_agg) to retrieve complex, nested resume hierarchies in a single database roundtrip.
+
+    - Utilized #strong[SQLC] for type-safe database queries and schema-first code generation, reducing boilerplate code and improving performance with pgx\/v5 connection pooling.
+
+    - Developed a pointer-based fetch-and-merge strategy to safely handle partial updates (PATCH\/PUT) of domain resources without overwriting unset fields.
+
+    - Implemented table-driven unit tests using Testify and mock interfaces to ensure high-coverage validation of use cases and HTTP endpoints.
+
+  ],
+)
 
 #regular-entry(
   [

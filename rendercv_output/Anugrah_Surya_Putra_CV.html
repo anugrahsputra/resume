@@ -53,26 +53,26 @@
         <h2><strong>Universitas Pasundan</strong>, Bachelor of Engineering (BE) in Informatics Engineering -- Kota Bandung, Jawa Barat</h2>
         <p>Sept 2018 – June 2023</p>
         <h1>Experience</h1>
-        <h2><strong>Mobile Engineer</strong>, BRIK Indonesia -- South Jakarta, Jakarta</h2>
+        <h2><strong>Mobile Engineer</strong>, PT Bangun Rancang Indonesia Kita (BRIK) -- South Jakarta, Jakarta</h2>
         <p>Aug 2025 – present</p>
         <ul>
         <li>
-        <p>Maintained and enhanced two <strong>Flutter</strong> applications: <strong>BRIK Hub</strong> (internal business operations) and <strong>PaintPro Loyalty</strong> (customer loyalty program).</p>
+        <p>Built a local-first sync engine that automatically saves and uploads data in the background, eliminating the need for drivers to manually refresh the app.</p>
         </li>
         <li>
-        <p>Integrated <strong><em>*Shorebird</em></strong>* for over-the-air hotfixes, reducing critical patch deployment time from days to minutes (~80% improvement).</p>
+        <p>Designed an offline caching system for driver checklists that prevents progress loss and step-skipping in areas with no internet connection.</p>
         </li>
         <li>
-        <p>Built monitoring dashboards with <strong><em>*Firebase</em>* Crashlytics</strong> and <strong>Performance Monitoring</strong>, enabling proactive issue detection and faster debugging.</p>
+        <p>Improved camera speed and app stability by offloading photo and video processing to background tasks using <strong><em>*FFmpeg</em></strong>*.</p>
         </li>
         <li>
-        <p>Refactored shared UI components and business logic into reusable modules, reducing code duplication and improving maintainability.</p>
+        <p>Created a flexible notification routing system using the <strong><em>*Strategy Pattern</em></strong>* to direct users to specific pages based on their role and context.</p>
         </li>
         <li>
-        <p>Established <strong>CI/CD</strong> pipelines with automated testing and deployment workflows, streamlining release cycles and reducing manual errors.</p>
+        <p>Developed a unified check-in flow for field visits that dynamically adjusts steps depending on whether the user is online or offline.</p>
         </li>
         <li>
-        <p>Collaborated with product and backend teams to translate business requirements into technical implementations and deliver features on schedule.</p>
+        <p>Automated testing and over-the-air (OTA) hotfixes using <strong><em>*Bitbucket Pipelines</em></strong><em> and </em><strong><em>Shorebird</em></strong>*, reducing hotfix delivery time from days to minutes.</p>
         </li>
         </ul>
         <h2><strong>Mobile Engineer</strong>, PT. Semesta Arus Technology -- South Jakarta, Jakarta</h2>
@@ -98,6 +98,46 @@
         </li>
         </ul>
         <h1>Projects</h1>
+        <h2><strong><a href="https://github.com/anugrahsputra/go-quran-api">Quran API</a></strong></h2>
+        <p>Oct 2025 – Mar 2026</p>
+        <p><strong>Go</strong>-based REST API for retrieving Quranic texts, Tafsir (exegesis), and prayer times, featuring full-text search capabilities using <strong>Bleve</strong> and <strong>Redis</strong> caching.</p>
+        <ul>
+        <li>
+        <p>Architected a <strong>Clean Architecture</strong> backend in <strong>Go</strong> using the <strong>Gin</strong> framework, decoupling handlers, business services, and repository layers to ensure modularity.</p>
+        </li>
+        <li>
+        <p>Engineered a high-performance full-text search engine using <strong>Bleve</strong>, configuring a custom N-gram text analyzer and Unicode tokenizer to enable fuzzy matches on transliterated queries.</p>
+        </li>
+        <li>
+        <p>Optimized API response latency by integrating <strong>Redis</strong> as a cache layer with a 24-hour TTL for external upstream APIs, reducing downstream request overhead.</p>
+        </li>
+        <li>
+        <p>Developed a custom IP-based fixed-window rate limiter middleware with <strong>Redis</strong>, utilizing a fail-open design to maintain API availability during database or cache disruptions.</p>
+        </li>
+        <li>
+        <p>Streamlined container deployments by building a multi-stage <strong>Docker</strong> pipeline that pre-builds and bundles search indexes to eliminate cold-start initialization latency.</p>
+        </li>
+        </ul>
+        <h2><strong><a href="https://github.com/anugrahsputra/portfolio-backend/">Portfolio Backend</a></strong></h2>
+        <p>Mar 2026 – present</p>
+        <p><strong>Go</strong>-based REST API backend for a personal portfolio system using <strong>Clean Architecture</strong>, <strong>Gin</strong>, <strong>PostgreSQL</strong>, and <strong>SQLC</strong>.</p>
+        <ul>
+        <li>
+        <p>Architected a modular system using Clean (Hexagonal) Architecture to decouple business logic, database operations, and the HTTP presentation layer.</p>
+        </li>
+        <li>
+        <p>Designed a high-performance LATERAL JOIN query using <strong>PostgreSQL</strong> JSON aggregation (jsonb_agg) to retrieve complex, nested resume hierarchies in a single database roundtrip.</p>
+        </li>
+        <li>
+        <p>Utilized <strong>SQLC</strong> for type-safe database queries and schema-first code generation, reducing boilerplate code and improving performance with pgx/v5 connection pooling.</p>
+        </li>
+        <li>
+        <p>Developed a pointer-based fetch-and-merge strategy to safely handle partial updates (PATCH/PUT) of domain resources without overwriting unset fields.</p>
+        </li>
+        <li>
+        <p>Implemented table-driven unit tests using Testify and mock interfaces to ensure high-coverage validation of use cases and HTTP endpoints.</p>
+        </li>
+        </ul>
         <h2><strong><a href="https://github.com/anugrahsputra/change_project_name/">Change Project Name</a></strong></h2>
         <p>Sept 2025 – present</p>
         <p>Open-source CLI tool built with <strong>Dart</strong> to automate <strong>Flutter</strong>/<strong>Dart</strong> project renaming and refactoring.</p>

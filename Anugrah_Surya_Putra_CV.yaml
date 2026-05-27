@@ -26,18 +26,18 @@ cv:
         location: Kota Bandung, Jawa Barat
 
     experience:
-      - company: BRIK Indonesia
+      - company: PT Bangun Rancang Indonesia Kita (BRIK)
         position: Mobile Engineer
         start_date: 2025-08
         end_date: present
         location: South Jakarta, Jakarta
         highlights:
-          - "Maintained and enhanced two Flutter applications: **BRIK Hub** (internal business operations) and **PaintPro Loyalty** (customer loyalty program)."
-          - "Integrated **Shorebird** for over-the-air hotfixes, reducing critical patch deployment time from days to minutes (~80% improvement)."
-          - "Built monitoring dashboards with **Firebase Crashlytics** and **Performance Monitoring**, enabling proactive issue detection and faster debugging."
-          - "Refactored shared UI components and business logic into reusable modules, reducing code duplication and improving maintainability."
-          - "Established CI/CD pipelines with automated testing and deployment workflows, streamlining release cycles and reducing manual errors."
-          - "Collaborated with product and backend teams to translate business requirements into technical implementations and deliver features on schedule."
+          - "Built a local-first sync engine that automatically saves and uploads data in the background, eliminating the need for drivers to manually refresh the app."
+          - "Designed an offline caching system for driver checklists that prevents progress loss and step-skipping in areas with no internet connection."
+          - "Improved camera speed and app stability by offloading photo and video processing to background tasks using **FFmpeg**."
+          - "Created a flexible notification routing system using the **Strategy Pattern** to direct users to specific pages based on their role and context."
+          - "Developed a unified check-in flow for field visits that dynamically adjusts steps depending on whether the user is online or offline."
+          - "Automated testing and over-the-air (OTA) hotfixes using **Bitbucket Pipelines** and **Shorebird**, reducing hotfix delivery time from days to minutes."
 
       - company: PT. Semesta Arus Technology
         position: Mobile Engineer
@@ -53,6 +53,26 @@ cv:
           - "Mentored junior developers on Flutter best practices and code review processes, improving team code quality and knowledge sharing."
 
     projects:
+      - name: "[Quran API](https://github.com/anugrahsputra/go-quran-api)"
+        start_date: 2025-10
+        end_date: 2026-03
+        summary: "Go-based REST API for retrieving Quranic texts, Tafsir (exegesis), and prayer times, featuring full-text search capabilities using Bleve and Redis caching."
+        highlights:
+          - "Architected a Clean Architecture backend in Go using the Gin framework, decoupling handlers, business services, and repository layers to ensure modularity."
+          - "Engineered a high-performance full-text search engine using Bleve, configuring a custom N-gram text analyzer and Unicode tokenizer to enable fuzzy matches on transliterated queries."
+          - "Optimized API response latency by integrating Redis as a cache layer with a 24-hour TTL for external upstream APIs, reducing downstream request overhead."
+          - "Developed a custom IP-based fixed-window rate limiter middleware with Redis, utilizing a fail-open design to maintain API availability during database or cache disruptions."
+          - "Streamlined container deployments by building a multi-stage Docker pipeline that pre-builds and bundles search indexes to eliminate cold-start initialization latency."
+      - name: "[Portfolio Backend](https://github.com/anugrahsputra/portfolio-backend/)"
+        start_date: 2026-03
+        end_date: present
+        summary: "Go-based REST API backend for a personal portfolio system using Clean Architecture, Gin, PostgreSQL, and SQLC."
+        highlights:
+          - "Architected a modular system using Clean (Hexagonal) Architecture to decouple business logic, database operations, and the HTTP presentation layer."
+          - "Designed a high-performance LATERAL JOIN query using PostgreSQL JSON aggregation (jsonb_agg) to retrieve complex, nested resume hierarchies in a single database roundtrip."
+          - "Utilized SQLC for type-safe database queries and schema-first code generation, reducing boilerplate code and improving performance with pgx/v5 connection pooling."
+          - "Developed a pointer-based fetch-and-merge strategy to safely handle partial updates (PATCH/PUT) of domain resources without overwriting unset fields."
+          - "Implemented table-driven unit tests using Testify and mock interfaces to ensure high-coverage validation of use cases and HTTP endpoints."
       - name: "[Change Project Name](https://github.com/anugrahsputra/change_project_name/)"
         start_date: 2025-09
         end_date: present
@@ -180,6 +200,15 @@ settings:
     - WebSockets
     - Jetpack Compose
     - SwiftUI
+    - FFmpeg
+    - Strategy Pattern
+    - Bitbucket Pipelines
+    - Gin
+    - Bleve
+    - Redis
+    - SQLC
+    - PostgreSQL
+    - Docker
   render_command:
     pdf_path: rendercv_output/Anugrah_Surya_Putra_CV.pdf
     png_path: rendercv_output/Anugrah_Surya_Putra_CV.png

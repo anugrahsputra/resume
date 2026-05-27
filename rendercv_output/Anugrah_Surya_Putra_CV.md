@@ -17,21 +17,21 @@ Sept 2018 – June 2023
 
 
 # Experience
-## **Mobile Engineer**, BRIK Indonesia -- South Jakarta, Jakarta
+## **Mobile Engineer**, PT Bangun Rancang Indonesia Kita (BRIK) -- South Jakarta, Jakarta
 
 Aug 2025 – present
 
-- Maintained and enhanced two **Flutter** applications: **BRIK Hub** (internal business operations) and **PaintPro Loyalty** (customer loyalty program).
+- Built a local-first sync engine that automatically saves and uploads data in the background, eliminating the need for drivers to manually refresh the app.
 
-- Integrated ****Shorebird**** for over-the-air hotfixes, reducing critical patch deployment time from days to minutes (~80% improvement).
+- Designed an offline caching system for driver checklists that prevents progress loss and step-skipping in areas with no internet connection.
 
-- Built monitoring dashboards with ****Firebase** Crashlytics** and **Performance Monitoring**, enabling proactive issue detection and faster debugging.
+- Improved camera speed and app stability by offloading photo and video processing to background tasks using ****FFmpeg****.
 
-- Refactored shared UI components and business logic into reusable modules, reducing code duplication and improving maintainability.
+- Created a flexible notification routing system using the ****Strategy Pattern**** to direct users to specific pages based on their role and context.
 
-- Established **CI/CD** pipelines with automated testing and deployment workflows, streamlining release cycles and reducing manual errors.
+- Developed a unified check-in flow for field visits that dynamically adjusts steps depending on whether the user is online or offline.
 
-- Collaborated with product and backend teams to translate business requirements into technical implementations and deliver features on schedule.
+- Automated testing and over-the-air (OTA) hotfixes using ****Bitbucket Pipelines**** and ****Shorebird****, reducing hotfix delivery time from days to minutes.
 
 
 
@@ -54,6 +54,42 @@ June 2024 – July 2025
 
 
 # Projects
+## **[Quran API](https://github.com/anugrahsputra/go-quran-api)**
+
+Oct 2025 – Mar 2026
+
+**Go**-based REST API for retrieving Quranic texts, Tafsir (exegesis), and prayer times, featuring full-text search capabilities using **Bleve** and **Redis** caching.
+
+- Architected a **Clean Architecture** backend in **Go** using the **Gin** framework, decoupling handlers, business services, and repository layers to ensure modularity.
+
+- Engineered a high-performance full-text search engine using **Bleve**, configuring a custom N-gram text analyzer and Unicode tokenizer to enable fuzzy matches on transliterated queries.
+
+- Optimized API response latency by integrating **Redis** as a cache layer with a 24-hour TTL for external upstream APIs, reducing downstream request overhead.
+
+- Developed a custom IP-based fixed-window rate limiter middleware with **Redis**, utilizing a fail-open design to maintain API availability during database or cache disruptions.
+
+- Streamlined container deployments by building a multi-stage **Docker** pipeline that pre-builds and bundles search indexes to eliminate cold-start initialization latency.
+
+
+
+## **[Portfolio Backend](https://github.com/anugrahsputra/portfolio-backend/)**
+
+Mar 2026 – present
+
+**Go**-based REST API backend for a personal portfolio system using **Clean Architecture**, **Gin**, **PostgreSQL**, and **SQLC**.
+
+- Architected a modular system using Clean (Hexagonal) Architecture to decouple business logic, database operations, and the HTTP presentation layer.
+
+- Designed a high-performance LATERAL JOIN query using **PostgreSQL** JSON aggregation (jsonb_agg) to retrieve complex, nested resume hierarchies in a single database roundtrip.
+
+- Utilized **SQLC** for type-safe database queries and schema-first code generation, reducing boilerplate code and improving performance with pgx/v5 connection pooling.
+
+- Developed a pointer-based fetch-and-merge strategy to safely handle partial updates (PATCH/PUT) of domain resources without overwriting unset fields.
+
+- Implemented table-driven unit tests using Testify and mock interfaces to ensure high-coverage validation of use cases and HTTP endpoints.
+
+
+
 ## **[Change Project Name](https://github.com/anugrahsputra/change_project_name/)**
 
 Sept 2025 – present
