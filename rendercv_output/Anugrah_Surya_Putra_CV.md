@@ -21,17 +21,17 @@ Sept 2018 – June 2023
 
 Aug 2025 – present
 
-- Built a local-first sync engine that automatically saves and uploads data in the background, eliminating the need for drivers to manually refresh the app.
+- Sole mobile engineer for BRIK's internal **Flutter** apps, covering six field roles across logistics operations. Own architecture, delivery, and production support with no other mobile engineer on the team.
 
-- Designed an offline caching system for driver checklists that prevents progress loss and step-skipping in areas with no internet connection.
+- Leading a phased rewrite from page-based code to **feature-first modules**, each role isolated behind its own **Bloc** layer, **Drift** store, and route table. Most modules are live in production, with the rest migrating one at a time rather than in a single cutover.
 
-- Improved camera speed and app stability by offloading photo and video processing to background tasks using ****FFmpeg****.
+- Designed the **offline-first sync layer** around **Drift** for local persistence and an **outbox queue** that replays writes once connectivity returns. Built background **GPS tracking** on a foreground service with its own retry queue, hardened against OEM battery killers on MIUI devices.
 
-- Created a flexible notification routing system using the ****Strategy Pattern**** to direct users to specific pages based on their role and context.
+- Own the release pipeline end to end. **Bitbucket Pipelines** for build and test, **Google Play Console** for store releases, **Shorebird** for over-the-air patches. Shipped 20+ store releases and 30+ OTA patches, cutting hotfix delivery from days to same-day without store review.
 
-- Developed a unified check-in flow for field visits that dynamically adjusts steps depending on whether the user is online or offline.
+- Cut startup and runtime cost by removing double JSON parsing in the response layer, adding **HTTP/2** connection pooling, and deferring non-critical init off the launch path. Moved photo and video processing into **FFmpeg** background tasks to stop camera stalls and ANRs on low-end devices.
 
-- Automated testing and over-the-air (OTA) hotfixes using ****Bitbucket Pipelines**** and ****Shorebird****, reducing hotfix delivery time from days to minutes.
+- Instrumented the app with **Sentry**, added **Maestro** E2E coverage on the delivery flow, and work directly with field users to turn their reports into fixes.
 
 
 
@@ -39,9 +39,9 @@ Aug 2025 – present
 
 June 2024 – July 2025
 
-- Developed cross-platform mobile applications using ****Flutter**** and ****Compose Multiplatform****, delivering unified experiences for iOS and Android.
+- Developed cross-platform mobile applications using **Flutter** and **Compose Multiplatform**, delivering unified experiences for iOS and Android.
 
-- Implemented ****Clean Architecture**** and ****SOLID** principles**, creating modular codebases that improved testability and reduced feature development time.
+- Implemented **Clean Architecture** and **SOLID** principles, creating modular codebases that improved testability and reduced feature development time.
 
 - Partnered with backend teams to integrate **RESTful APIs**, ensuring reliable data synchronization for business-critical operations.
 
@@ -112,7 +112,7 @@ Interactive KIOSK information display app for DPR RI built with **Kotlin** and *
 
 - Developed automated power-scheduling and WebView reset mechanisms for reliable unattended operation.
 
-- Built real-time bidirectional communication using ****WebSockets**** with heartbeat monitoring for remote status tracking.
+- Built real-time bidirectional communication using **WebSockets** with heartbeat monitoring for remote status tracking.
 
 - Designed intuitive touch-based UI optimized for large-screen KIOSK displays with accessibility considerations.
 
@@ -126,7 +126,7 @@ Dec 2022 – May 2023
 
 Dual-sided e-commerce platform (Seller & Buyer) for regional MSMEs built with **Flutter** and **Firebase**.
 
-- Developed full-stack mobile experience with ****Flutter****, ****Firebase****, and **Google Maps API** for location-based services.
+- Developed full-stack mobile experience with **Flutter**, **Firebase**, and **Google Maps API** for location-based services.
 
 - Conducted rigorous blackbox testing, achieving 95%+ test pass rate before production deployment.
 
