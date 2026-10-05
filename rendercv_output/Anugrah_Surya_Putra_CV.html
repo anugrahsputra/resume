@@ -48,7 +48,7 @@
         <li>GitHub: <a href="https://github.com/anugrahsputra">anugrahsputra</a></li>
         </ul>
         <h1>Summary</h1>
-        <p>Mobile Engineer with 2+ years of experience building cross-platform applications using <strong>Flutter</strong> and <strong>Kotlin Multiplatform</strong>. Skilled in scalable architecture design, <strong>CI/CD</strong> automation, and production stability. Collaborative team player with a track record of delivering business-critical solutions.</p>
+        <p>Mobile Engineer with 2+ years of experience in <strong>Flutter</strong> and <strong>Kotlin Multiplatform</strong>. Currently the sole mobile engineer at BRIK, building offline-first apps for field operations teams and owning everything from module architecture to <strong>CI/CD</strong> and over-the-air releases.</p>
         <h1>Education</h1>
         <h2><strong>Universitas Pasundan</strong>, Bachelor of Engineering (BE) in Informatics Engineering -- Kota Bandung, Jawa Barat</h2>
         <p>Sept 2018 – June 2023</p>
@@ -60,19 +60,22 @@
         <p>Sole mobile engineer for BRIK's internal <strong>Flutter</strong> apps, covering six field roles across logistics operations. Own architecture, delivery, and production support with no other mobile engineer on the team.</p>
         </li>
         <li>
-        <p>Leading a phased rewrite from page-based code to <strong>feature-first modules</strong>, each role isolated behind its own <strong>Bloc</strong> layer, <strong>Drift</strong> store, and route table. Most modules are live in production, with the rest migrating one at a time rather than in a single cutover.</p>
+        <p>Leading a phased rewrite from page-based code to <strong>feature-first modules</strong>, each role isolated behind its own <strong>Bloc</strong> layer, <strong>Drift</strong> store, and route table. Shipped the first modules to production across two major releases, with the rest moving over one at a time rather than in a single cutover.</p>
+        </li>
+        <li>
+        <p>Rebuilt a core operations flow as an offline-first module. Wrote the <strong>WebSockets</strong> client for on-site hardware with per-request reply matching, timeouts, and token refresh on reconnect, falling back to REST-only manual entry when the link drops. Edits send only changed fields, and offline writes reach the server in order once back online. Covered by 300+ module tests.</p>
         </li>
         <li>
         <p>Designed the <strong>offline-first sync layer</strong> around <strong>Drift</strong> for local persistence and an <strong>outbox queue</strong> that replays writes once connectivity returns. Built background <strong>GPS tracking</strong> on a foreground service with its own retry queue, hardened against OEM battery killers on MIUI devices.</p>
         </li>
         <li>
-        <p>Own the release pipeline end to end. <strong>Bitbucket Pipelines</strong> for build and test, <strong>Google Play Console</strong> for store releases, <strong>Shorebird</strong> for over-the-air patches. Shipped 20+ store releases and 30+ OTA patches, cutting hotfix delivery from days to same-day without store review.</p>
+        <p>Own the release pipeline end to end. <strong>Bitbucket Pipelines</strong> for build and test with tests gating every build, <strong>Google Play Console</strong> for store releases, <strong>Shorebird</strong> for over-the-air patches. Shipped 20+ store releases and 30+ OTA patches, cutting hotfix delivery from days to same-day without store review.</p>
         </li>
         <li>
         <p>Cut startup and runtime cost by removing double JSON parsing in the response layer, adding <strong>HTTP/2</strong> connection pooling, and deferring non-critical init off the launch path. Moved photo and video processing into <strong>FFmpeg</strong> background tasks to stop camera stalls and ANRs on low-end devices.</p>
         </li>
         <li>
-        <p>Instrumented the app with <strong>Sentry</strong>, added <strong>Maestro</strong> E2E coverage on the delivery flow, and work directly with field users to turn their reports into fixes.</p>
+        <p>Instrumented the app with <strong>Sentry</strong>, added <strong>Maestro</strong> E2E coverage on critical user flows, and work directly with field users to turn their reports into fixes.</p>
         </li>
         </ul>
         <h2><strong>Mobile Engineer</strong>, PT. Semesta Arus Technology -- South Jakarta, Jakarta</h2>
@@ -189,7 +192,8 @@
         <h1>Skills</h1>
         <p><strong>Languages:</strong> <strong>Dart</strong>, <strong>Kotlin</strong>, <strong>Go</strong>, <strong>Java</strong>, <strong>Swift</strong></p>
         <p><strong>Frameworks:</strong> <strong>Flutter</strong>, <strong>Compose Multiplatform</strong>, <strong>Jetpack Compose</strong>, <strong>SwiftUI</strong></p>
-        <p><strong>Tools &amp; Platforms:</strong> <strong>Firebase</strong>, Git, <strong>Shorebird</strong>, Figma, Android Studio, VS Code, Neovim</p>
+        <p><strong>Libraries:</strong> Bloc, Freezed, Drift, Hive, Dio, GoRouter, get_it, injectable</p>
+        <p><strong>Tools &amp; Platforms:</strong> <strong>Firebase</strong>, Sentry, <strong>Shorebird</strong>, <strong>Bitbucket Pipelines</strong>, Maestro, Git, Figma, Android Studio, VS Code, Neovim</p>
         <p><strong>Practices:</strong> <strong>Clean Architecture</strong>, <strong>SOLID</strong>, <strong>CI/CD</strong>, TDD, Agile Methodology</p>
     </article>
 </body>

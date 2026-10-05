@@ -101,7 +101,7 @@
 
 == Summary
 
-Mobile Engineer with 2+ years of experience building cross-platform applications using #strong[Flutter] and #strong[Kotlin Multiplatform]. Skilled in scalable architecture design, #strong[CI\/CD] automation, and production stability. Collaborative team player with a track record of delivering business-critical solutions.
+Mobile Engineer with 2+ years of experience in #strong[Flutter] and #strong[Kotlin Multiplatform]. Currently the sole mobile engineer at BRIK, building offline-first apps for field operations teams and owning everything from module architecture to #strong[CI\/CD] and over-the-air releases.
 
 == Education
 
@@ -132,15 +132,17 @@ Mobile Engineer with 2+ years of experience building cross-platform applications
   main-column-second-row: [
     - Sole mobile engineer for BRIK's internal #strong[Flutter] apps, covering six field roles across logistics operations. Own architecture, delivery, and production support with no other mobile engineer on the team.
 
-    - Leading a phased rewrite from page-based code to #strong[feature-first modules], each role isolated behind its own #strong[Bloc] layer, #strong[Drift] store, and route table. Most modules are live in production, with the rest migrating one at a time rather than in a single cutover.
+    - Leading a phased rewrite from page-based code to #strong[feature-first modules], each role isolated behind its own #strong[Bloc] layer, #strong[Drift] store, and route table. Shipped the first modules to production across two major releases, with the rest moving over one at a time rather than in a single cutover.
+
+    - Rebuilt a core operations flow as an offline-first module. Wrote the #strong[WebSockets] client for on-site hardware with per-request reply matching, timeouts, and token refresh on reconnect, falling back to REST-only manual entry when the link drops. Edits send only changed fields, and offline writes reach the server in order once back online. Covered by 300+ module tests.
 
     - Designed the #strong[offline-first sync layer] around #strong[Drift] for local persistence and an #strong[outbox queue] that replays writes once connectivity returns. Built background #strong[GPS tracking] on a foreground service with its own retry queue, hardened against OEM battery killers on MIUI devices.
 
-    - Own the release pipeline end to end. #strong[Bitbucket Pipelines] for build and test, #strong[Google Play Console] for store releases, #strong[Shorebird] for over-the-air patches. Shipped 20+ store releases and 30+ OTA patches, cutting hotfix delivery from days to same-day without store review.
+    - Own the release pipeline end to end. #strong[Bitbucket Pipelines] for build and test with tests gating every build, #strong[Google Play Console] for store releases, #strong[Shorebird] for over-the-air patches. Shipped 20+ store releases and 30+ OTA patches, cutting hotfix delivery from days to same-day without store review.
 
     - Cut startup and runtime cost by removing double JSON parsing in the response layer, adding #strong[HTTP\/2] connection pooling, and deferring non-critical init off the launch path. Moved photo and video processing into #strong[FFmpeg] background tasks to stop camera stalls and ANRs on low-end devices.
 
-    - Instrumented the app with #strong[Sentry], added #strong[Maestro] E2E coverage on the delivery flow, and work directly with field users to turn their reports into fixes.
+    - Instrumented the app with #strong[Sentry], added #strong[Maestro] E2E coverage on critical user flows, and work directly with field users to turn their reports into fixes.
 
   ],
 )
@@ -295,6 +297,8 @@ Mobile Engineer with 2+ years of experience building cross-platform applications
 
 #strong[Frameworks:] #strong[Flutter], #strong[Compose Multiplatform], #strong[Jetpack Compose], #strong[SwiftUI]
 
-#strong[Tools & Platforms:] #strong[Firebase], Git, #strong[Shorebird], Figma, Android Studio, VS Code, Neovim
+#strong[Libraries:] Bloc, Freezed, Drift, Hive, Dio, GoRouter, get\_it, injectable
+
+#strong[Tools & Platforms:] #strong[Firebase], Sentry, #strong[Shorebird], #strong[Bitbucket Pipelines], Maestro, Git, Figma, Android Studio, VS Code, Neovim
 
 #strong[Practices:] #strong[Clean Architecture], #strong[SOLID], #strong[CI\/CD], TDD, Agile Methodology

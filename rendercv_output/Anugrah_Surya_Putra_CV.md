@@ -8,7 +8,7 @@
 
 
 # Summary
-Mobile Engineer with 2+ years of experience building cross-platform applications using **Flutter** and **Kotlin Multiplatform**. Skilled in scalable architecture design, **CI/CD** automation, and production stability. Collaborative team player with a track record of delivering business-critical solutions.
+Mobile Engineer with 2+ years of experience in **Flutter** and **Kotlin Multiplatform**. Currently the sole mobile engineer at BRIK, building offline-first apps for field operations teams and owning everything from module architecture to **CI/CD** and over-the-air releases.
 
 # Education
 ## **Universitas Pasundan**, Bachelor of Engineering (BE) in Informatics Engineering -- Kota Bandung, Jawa Barat
@@ -23,15 +23,17 @@ Aug 2025 – present
 
 - Sole mobile engineer for BRIK's internal **Flutter** apps, covering six field roles across logistics operations. Own architecture, delivery, and production support with no other mobile engineer on the team.
 
-- Leading a phased rewrite from page-based code to **feature-first modules**, each role isolated behind its own **Bloc** layer, **Drift** store, and route table. Most modules are live in production, with the rest migrating one at a time rather than in a single cutover.
+- Leading a phased rewrite from page-based code to **feature-first modules**, each role isolated behind its own **Bloc** layer, **Drift** store, and route table. Shipped the first modules to production across two major releases, with the rest moving over one at a time rather than in a single cutover.
+
+- Rebuilt a core operations flow as an offline-first module. Wrote the **WebSockets** client for on-site hardware with per-request reply matching, timeouts, and token refresh on reconnect, falling back to REST-only manual entry when the link drops. Edits send only changed fields, and offline writes reach the server in order once back online. Covered by 300+ module tests.
 
 - Designed the **offline-first sync layer** around **Drift** for local persistence and an **outbox queue** that replays writes once connectivity returns. Built background **GPS tracking** on a foreground service with its own retry queue, hardened against OEM battery killers on MIUI devices.
 
-- Own the release pipeline end to end. **Bitbucket Pipelines** for build and test, **Google Play Console** for store releases, **Shorebird** for over-the-air patches. Shipped 20+ store releases and 30+ OTA patches, cutting hotfix delivery from days to same-day without store review.
+- Own the release pipeline end to end. **Bitbucket Pipelines** for build and test with tests gating every build, **Google Play Console** for store releases, **Shorebird** for over-the-air patches. Shipped 20+ store releases and 30+ OTA patches, cutting hotfix delivery from days to same-day without store review.
 
 - Cut startup and runtime cost by removing double JSON parsing in the response layer, adding **HTTP/2** connection pooling, and deferring non-critical init off the launch path. Moved photo and video processing into **FFmpeg** background tasks to stop camera stalls and ANRs on low-end devices.
 
-- Instrumented the app with **Sentry**, added **Maestro** E2E coverage on the delivery flow, and work directly with field users to turn their reports into fixes.
+- Instrumented the app with **Sentry**, added **Maestro** E2E coverage on critical user flows, and work directly with field users to turn their reports into fixes.
 
 
 
@@ -141,6 +143,8 @@ Dual-sided e-commerce platform (Seller & Buyer) for regional MSMEs built with **
 
 **Frameworks:** **Flutter**, **Compose Multiplatform**, **Jetpack Compose**, **SwiftUI**
 
-**Tools & Platforms:** **Firebase**, Git, **Shorebird**, Figma, Android Studio, VS Code, Neovim
+**Libraries:** Bloc, Freezed, Drift, Hive, Dio, GoRouter, get_it, injectable
+
+**Tools & Platforms:** **Firebase**, Sentry, **Shorebird**, **Bitbucket Pipelines**, Maestro, Git, Figma, Android Studio, VS Code, Neovim
 
 **Practices:** **Clean Architecture**, **SOLID**, **CI/CD**, TDD, Agile Methodology
